@@ -51,9 +51,25 @@ http://localhost:3000
 - Prefer feature folders if the UI grows
 
 ### Shared
+
+Reusable libraries live in `packages/`.
+
+Currently:
+
+- `packages/shared` — shared TypeScript types and API contracts
+
+Rules:
+
 - Shared types live in `packages/shared/src`
 - Export them from `packages/shared/src/index.ts`
 - API responses should match shared types
+- Do not place server logic or React components in `shared`
+
+Other reusable libraries may also live in `packages/` in the future, for example:
+
+- `packages/ui` — shared React components
+- `packages/db` — database schema or ORM layer
+- `packages/config` — shared tooling configuration
 
 ## Rules
 
@@ -77,4 +93,3 @@ Reusable workflows are stored in:
 skills/
 
 Agents should use these skills when implementing features.
-
