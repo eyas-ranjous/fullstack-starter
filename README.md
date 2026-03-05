@@ -75,7 +75,3 @@ Web runs at:
 ```
 http://localhost:5173
 ```
-
-## Purpose
-
-A minimal fullstack starter designed to be extended by developers or AI agents.
