@@ -16,6 +16,7 @@ yarn-debug.log*
 
 # OS
 .DS_Store
+__MACOSX
 
 # editors
 .vscode

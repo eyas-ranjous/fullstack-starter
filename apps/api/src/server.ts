@@ -1,7 +1,11 @@
-// apps/api/src/server.ts
 import Fastify from "fastify";
+import cors from "@fastify/cors";
 
 const app = Fastify({ logger: true });
+
+await app.register(cors, {
+  origin: "*",
+});
 
 app.get("/health", async () => ({
   ok: true,
