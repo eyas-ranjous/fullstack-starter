@@ -12,16 +12,18 @@ Structure:
 
 Install dependencies:
 
-pnpm install
+`pnpm install`
 
 Run both apps:
 
-pnpm dev
+`pnpm dev`
 
 Run individually:
 
+```
 pnpm dev:api
 pnpm dev:web
+```
 
 ## Local development
 
@@ -90,6 +92,6 @@ After changes:
 
 Reusable workflows are stored in:
 
-skills/
+`skills/`
 
 Agents should use these skills when implementing features.
