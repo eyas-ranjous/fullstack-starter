@@ -1,8 +1,14 @@
+import { useHealth } from "./useHealth";
+
 export default function App() {
+  const { data, loading } = useHealth();
+
+  if (loading) return <p>Loading...</p>;
+
   return (
-    <div style={{ padding: 40, fontFamily: "system-ui" }}>
+    <div>
       <h1>Fullstack Starter</h1>
-      <p>React app is running.</p>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   );
 }

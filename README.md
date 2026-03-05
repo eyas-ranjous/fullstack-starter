@@ -9,12 +9,16 @@ fullstack-starter
 ├── apps
 │   ├── api
 │   │   ├── src
+│   │   │   ├── routes
+│   │   │   │   └── health.ts
 │   │   │   └── server.ts
 │   │   ├── package.json
 │   │   └── tsconfig.json
 │   │
 │   └── web
 │       ├── src
+│       │   ├── api.ts
+│       │   ├── useHealth.ts
 │       │   ├── main.tsx
 │       │   └── App.tsx
 │       ├── index.html
@@ -25,8 +29,11 @@ fullstack-starter
 ├── packages
 │   └── shared
 │       ├── src
+│       │   ├── contracts
+│       │   │   └── health.ts
 │       │   └── index.ts
-│       └── package.json
+│       ├── package.json
+│       └── tsconfig.json
 │
 ├── skills
 │   ├── create-api-endpoint
@@ -38,6 +45,7 @@ fullstack-starter
 ├── README.md
 ├── package.json
 ├── pnpm-workspace.yaml
+├── tsconfig.json
 └── .editorconfig
 ```
 

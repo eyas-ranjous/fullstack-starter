@@ -4,5 +4,9 @@
   "scripts": {
     "dev": "pnpm -r dev",
     "build": "pnpm -r build"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
