@@ -27,7 +27,7 @@ fullstack-starter
 │       ├── src
 │       │   ├── contracts
 │       │   │   └── health.ts
-│       │   └── index.ts
+│       ├── index.ts
 │
 ├── skills
 │   ├── create-api-endpoint
