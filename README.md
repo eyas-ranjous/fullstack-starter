@@ -11,7 +11,7 @@ fullstack-starter
 │   │   ├── src
 │   │   │   ├── routes
 │   │   │   │   └── health.ts
-│   │   │   └── server.ts
+│   │   ├── server.ts
 │   │
 │   └── web
 │       ├── src
