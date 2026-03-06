@@ -1,5 +1,7 @@
+import "dotenv/config";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
+import { healthRoutes } from "./routes/health.js";
 
 const app = Fastify({ logger: true });
 
@@ -7,9 +9,7 @@ await app.register(cors, {
   origin: "*",
 });
 
-app.get("/health", async () => ({
-  ok: true,
-  uptimeMs: Math.round(process.uptime() * 1000),
-}));
+await app.register(healthRoutes);
 
-await app.listen({ port: 3000, host: "0.0.0.0" });
+const port = Number(process.env.PORT ?? 3000);
+await app.listen({ port, host: "0.0.0.0" });

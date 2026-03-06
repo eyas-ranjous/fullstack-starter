@@ -31,9 +31,9 @@ fullstack-starter
 │
 ├── skills
 │   ├── create-api-endpoint
-│   │   └── SKILL.md
+│   │   └── SKILLS.md
 │   └── create-react-feature
-│       └── SKILL.md
+│       └── SKILLS.md
 │
 ├── AGENTS.md
 ├── README.md

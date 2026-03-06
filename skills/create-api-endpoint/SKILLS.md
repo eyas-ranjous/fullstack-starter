@@ -2,26 +2,27 @@
 
 Use this skill when adding a new backend endpoint.
 
-Steps:
+## Steps
 
-1. Define request/response types in `packages/shared/src/contracts`.
-2. Export the types from `packages/shared/src/index.ts`.
-3. Implement the route in `apps/api/src/routes`.
-4. Register the route from `server.ts`.
-5. Validate inputs with Zod when necessary.
-6. Return responses matching the shared types.
+1. Define request/response types in `packages/shared/src/contracts/<resource>.ts`.
+2. Export the new types from `packages/shared/src/index.ts`.
+3. Implement the route in `apps/api/src/routes/<resource>.ts`.
+4. Register the route in `apps/api/src/server.ts` with `app.register(<resourceRoutes>)`.
+5. Validate request inputs with Zod when the endpoint accepts user-supplied data.
+6. Return responses that exactly match the shared type.
 
-Example structure:
+## Example
 
 ```text
-packages/shared/src/contracts/users.ts
-apps/api/src/routes/users.ts
+packages/shared/src/contracts/users.ts   ← type definitions
+apps/api/src/routes/users.ts             ← route implementation
+apps/api/src/server.ts                   ← add app.register(usersRoutes)
 ```
 
-Rules:
+## Rules
 
-* Keep `server.ts` minimal.
-* Prefer small route modules.
-* Do not introduce new frameworks.
-* Avoid modifying unrelated endpoints.
-* API responses must match shared contracts.
+- Keep `server.ts` minimal — only `app.register()` calls and startup.
+- Prefer small, single-resource route modules.
+- Do not introduce new frameworks or change the server setup.
+- Do not modify unrelated routes.
+- API response shape must match the shared contract exactly.
