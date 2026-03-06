@@ -12,8 +12,6 @@ fullstack-starter
 │   │   │   ├── routes
 │   │   │   │   └── health.ts
 │   │   │   └── server.ts
-│   │   ├── package.json
-│   │   └── tsconfig.json
 │   │
 │   └── web
 │       ├── src
@@ -21,10 +19,8 @@ fullstack-starter
 │       │   ├── useHealth.ts
 │       │   ├── main.tsx
 │       │   └── App.tsx
+│       │   └── index.css
 │       ├── index.html
-│       ├── vite.config.ts
-│       ├── package.json
-│       └── tsconfig.json
 │
 ├── packages
 │   └── shared
@@ -32,8 +28,6 @@ fullstack-starter
 │       │   ├── contracts
 │       │   │   └── health.ts
 │       │   └── index.ts
-│       ├── package.json
-│       └── tsconfig.json
 │
 ├── skills
 │   ├── create-api-endpoint
@@ -43,10 +37,6 @@ fullstack-starter
 │
 ├── AGENTS.md
 ├── README.md
-├── package.json
-├── pnpm-workspace.yaml
-├── tsconfig.json
-└── .editorconfig
 ```
 
 ## Setup
