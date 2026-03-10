@@ -1,5 +1,9 @@
-# Skill: Create API Endpoint
+---
+name: create-api-endpoint
+description: add a new backend endpoint.
+---
 
+# Create API Endpoint
 Use this skill when adding a new backend endpoint.
 
 ## Steps

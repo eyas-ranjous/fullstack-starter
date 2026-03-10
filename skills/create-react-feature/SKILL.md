@@ -1,4 +1,9 @@
-# Skill: Create React Feature
+---
+name: create-react-feature
+description: add a new frontend feature.
+---
+
+# Create React Feature
 
 Use this skill when adding a new frontend feature.
 
