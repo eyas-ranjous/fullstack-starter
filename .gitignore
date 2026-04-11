@@ -24,3 +24,8 @@ __MACOSX
 
 # typescript
 *.tsbuildinfo
+
+# compiled JS artifacts from shared packages
+packages/*/src/**/*.js
+apps/web/src/**/*.js
+apps/web/vite.config.js
