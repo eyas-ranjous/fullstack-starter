@@ -2,6 +2,11 @@
   "name": "fullstack-starter",
   "private": true,
   "packageManager": "pnpm@10.32.1",
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.21.5"
+    }
+  },
   "scripts": {
     "predev": "find packages/*/src -name '*.js' -delete 2>/dev/null; true",
     "dev": "pnpm -r dev",
